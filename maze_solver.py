@@ -812,9 +812,6 @@ def main():
 	# reset and try a different solver
 	reset = False
 
-	# press p to pause
-	pause = False
-
 	# see if the maze should be made
 	while True:
 		print(40*"-")
@@ -889,9 +886,6 @@ def main():
 				if make_maze and not saved:
 					print("The window was closed prior to saving the maze")
 				run = False
-
-			if pygame.key.get_pressed()[pygame.K_p]:
-				print("pressed p")
 
 			if make_maze:
 				# look at mouse events

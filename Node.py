@@ -99,8 +99,5 @@ class Node:
 	def remove(self):
 		self.set_removed_from_path(True)
 
-	def get_num_nodes():
-		return Node.num_nodes
-
 	def __repr__(self):
 		return f"pos: ({self.row},{self.col}), cost: {self.cost}, visited: {self.visited}, removed: {self.removed_from_path}, being looked at: {self.being_looked_at}, in queue: {self.in_queue}"
